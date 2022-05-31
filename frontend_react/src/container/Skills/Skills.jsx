@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+
 import { AppWrap, MotionWrap } from "../../components/wrapper";
 import { urlFor, client } from "../../client";
 import ReactTooltip from "react-tooltip";
@@ -22,8 +23,6 @@ const Skills = () => {
       setSkills(data);
     });
   }, []);
-
-  console.log(experiences);
 
   return (
     <>
